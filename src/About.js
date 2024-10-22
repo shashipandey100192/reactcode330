@@ -10,7 +10,7 @@ export default Abc;
 
 export function One()
 {
-    return <h1>this is heading</h1>;
+    return <h1 style={{backgroundColor:'red'}}>this is heading</h1>;
 }
 
 const name = "kumar";
