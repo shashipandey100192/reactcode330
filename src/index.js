@@ -7,6 +7,9 @@ import XYz,{One,Tow} from './About';
 import Mycontact from './Mycontactus.ts';
 import Myfunc from './Myjsxfile.jsx';
 import Page from './Page.js';
+import Mymuipage from './Mymuipage.js';
+import Mycharts from './Mycharts.js';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +21,8 @@ root.render(
   <Mycontact/>
   <Myfunc></Myfunc>
   <Page></Page>
+  <Mymuipage></Mymuipage>
+  <Mycharts/>
 
   </React.StrictMode>
 );
