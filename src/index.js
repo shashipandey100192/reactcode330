@@ -3,26 +3,28 @@ import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import "./global.css";
-import XYz,{One,Tow} from './About';
-import Mycontact from './Mycontactus.ts';
-import Myfunc from './Myjsxfile.jsx';
-import Page from './Page.js';
-import Mymuipage from './Mymuipage.js';
-import Mycharts from './Mycharts.js';
+import Welcomepage from './modules/auth/Welcomepage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Myerrorpage from './modules/shares/Myerrorpage';
+import Mymainpage from './modules/dashboard/Mymainpage';
+import Mymobilepage from './modules/mobile/Mymobilepage';
+
+
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <XYz></XYz>
-   <One></One>
-   <Tow/>
-  <Mycontact/>
-  <Myfunc></Myfunc>
-  <Page></Page>
-  <Mymuipage></Mymuipage>
-  <Mycharts/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='' element={<Welcomepage/>}></Route>
+        <Route path='*' element={<Myerrorpage/>}></Route>
+        <Route path='dashboard' element={<Mymainpage/>}></Route>
+        <Route path='mobilerecharge' element={<Mymobilepage/>}></Route>
 
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
