@@ -10,6 +10,10 @@ import Mymainpage from './modules/dashboard/Mymainpage';
 import Mymobilepage from './modules/mobile/Mymobilepage';
 import Mylogonpage from './modules/auth/Mylogonpage';
 import Myregistorpage from './modules/auth/Myregistorpage';
+import Mobilehomepage from './modules/mobile/Mobilehomepage';
+import Mobilerecharge from './modules/mobile/components/Mobilerecharge';
+import Mobilenewpage from './modules/mobile/components/Mobilenewpage';
+import Mobileexchange from './modules/mobile/components/Mobileexchange';
 
 
 
@@ -25,7 +29,13 @@ root.render(
         <Route path='registorpage' element={<Myregistorpage/>}></Route>
         <Route path='*' element={<Myerrorpage/>}></Route>
         <Route path='homepage' element={<Welcomepage/>}></Route>
-        <Route path='mobilerecharge' element={<Mymobilepage/>}></Route>
+        <Route path='mobilerecharge' element={<Mymobilepage/>}>
+            <Route path='' element={<Mobilehomepage/>}/>
+            <Route path='recharge' element={<Mobilerecharge/>}/>
+            <Route path='newmobile' element={<Mobilenewpage/>}/>
+            <Route path='exchange' element={<Mobileexchange/>}/>
+            <Route path='*' element={<Myerrorpage/>}/>
+        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -36,6 +36,7 @@ const myuser = (u)=>{
                                 <div class="mb-3">
                                    <input type='button' value="login" className='btn btn-success'/>
                                    <Link to="registorpage" className="btn btn-default">Registor Now</Link>
+                                   <Link to="homepage" className="btn btn-default">dashboard</Link>
                                 {/* {statevariable==="login"? "yes" : statevariable} */}
                                 {statevariable==="login"? <button className='btn btn-success'>mylogin</button> : statevariable==="registor" ? <button className='btn btn-primary'>Registor</button> : ""}
                                 </div>
