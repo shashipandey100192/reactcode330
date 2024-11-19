@@ -14,6 +14,7 @@ import Mobilehomepage from './modules/mobile/Mobilehomepage';
 import Mobilerecharge from './modules/mobile/components/Mobilerecharge';
 import Mobilenewpage from './modules/mobile/components/Mobilenewpage';
 import Mobileexchange from './modules/mobile/components/Mobileexchange';
+import Detailspage from './modules/mobile/components/Detailspage';
 
 
 
@@ -34,6 +35,7 @@ root.render(
             <Route path='recharge' element={<Mobilerecharge/>}/>
             <Route path='newmobile' element={<Mobilenewpage/>}/>
             <Route path='exchange' element={<Mobileexchange/>}/>
+            <Route path='newmobile/detailspage/:id' element={<Detailspage/>}/>  
             <Route path='*' element={<Myerrorpage/>}/>
         </Route>
       </Routes>
