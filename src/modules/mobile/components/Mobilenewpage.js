@@ -20,8 +20,7 @@ function Mobilenewpage() {
             <div className='row'>
                 {product.map((d) => {
                     return (
-                        <div className='col-md-4 mt-3'>
-
+                        <div className='col-md-4 mt-3' key={d.id}>
                            <img src={d.image} alt='sdkfj' width="100%" height="200"/>
                            <h2>Price: {d.price}</h2>
                            <Link to={"detailspage/"+d.id} className='btn btn-success'>Details</Link>

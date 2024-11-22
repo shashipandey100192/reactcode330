@@ -71,3 +71,11 @@ body {
     overflow-y: auto;
   }
   
+  .myloader
+  {
+    font-size: 70px;
+    color:red;
+    background-color: green;
+    text-align: center;
+    padding:50px;
+  }
