@@ -19,6 +19,7 @@ import Detailspage from './modules/mobile/components/Detailspage';
 import { Provider } from 'react-redux';
 import { mydatastore } from './modules/mystore/Datastore';
 import Mobilerepairpage from './modules/mobile/components/Mobilerepairpage';
+import Myproduct from './modules/products/Myproduct';
 
 const Mobilenewpage = lazy(()=>import('./modules/mobile/components/Mobilenewpage'));
 
@@ -46,6 +47,8 @@ root.render(
             <Route path='newmobile/detailspage/:id' element={<Detailspage/>}/>  
             <Route path='*' element={<Myerrorpage/>}/>
         </Route>
+        <Route path='product' element={<Myproduct/>}></Route>
+        
       </Routes>
       </Provider>
     </BrowserRouter>

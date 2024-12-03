@@ -48,9 +48,9 @@ function Welcomepage() {
                 </div>
                 <div className='col-md-3 mt-3'>
                     <div className="card bg-warning">
-                        <Link to="/education">
+                        <Link to="/product">
                         <div className="card-body">
-                            <h5 className="card-title">Education</h5>
+                            <h5 className="card-title">Product</h5>
                         </div>
                         </Link>
                     </div>
